@@ -1,32 +1,28 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { Router, Link } from "@reach/router";
 import logo from "./logo.svg";
 import "./App.css";
-
-function Home() {
-  return <div>Hello i'm HOME</div>;
-}
-
-function Page1() {
-  return <div>Hello i'm Page1</div>;
-}
+import { Home, Page1 } from "./scenes";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav className="nav">
+          <ul>
+            <li>
+              <Link className="white" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="white" to="/page1">
+                Page1
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </header>
       <Router>
         <Home path="/"></Home>
