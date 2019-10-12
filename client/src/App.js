@@ -1,9 +1,9 @@
-import React from "react";
-import { Router, Link } from "@reach/router";
-import { css } from "linaria";
-import { styled } from "linaria/react";
-import logo from "./logo.svg";
-import { Home, Page1 } from "./scenes";
+import React from 'react';
+import { Router, Link } from '@reach/router';
+import { css } from 'linaria';
+import { styled } from 'linaria/react';
+import logo from './logo.svg';
+import { Home, Page1 } from './scenes';
 
 const Root = styled.div`
   text-align: center;
