@@ -1,5 +1,7 @@
 import React from 'react';
 
+import AddTaskForm from 'features/tasks/AddTaskForm';
+
 export function App() {
-  return <p>App</p>;
+  return <AddTaskForm></AddTaskForm>;
 }
